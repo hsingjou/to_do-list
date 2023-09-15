@@ -9,6 +9,6 @@
 <ul>
 <li>套用google font字體</li>
 <li>釐清magin、padding之差別</li>
-<li>用css畫出一個勾勾ㄩ</li>
+<li>用css畫出一個勾勾</li>
 <li>偽元素（::before）之觀念</li>
 </ul>

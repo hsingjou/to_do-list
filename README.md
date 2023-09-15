@@ -8,5 +8,5 @@
 <h3>在此練習作品中我學到......</h3>
 <ul>
 <li>套用google font字體</li>
-<li></li>
+<li>釐清magin、padding之差別</li>
 </ul>

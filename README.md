@@ -7,6 +7,6 @@
 
 <h3>在此練習作品中我學到......</h3>
 <ul>
-<li></li>
+<li>套用google font字體</li>
 <li></li>
 </ul>

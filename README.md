@@ -8,7 +8,8 @@
 <h3>在此練習作品中我學到......</h3>
 <ul>
 <li>套用google font字體</li>
-<li>釐清magin、padding之差別</li>
+<li>釐清magin、padding之差別，並且了解何謂box-sizing</li>
 <li>用css畫出一個勾勾</li>
-<li>偽元素（:before）之觀念</li>
+<li>偽元素（:before）之觀念。此練習中並無使用:after，不過也亦同釐清了</li>
+<li>新增文本節點之方法</li>
 </ul>

@@ -21,9 +21,7 @@
     padding: 5px;
     border-radius: 10px;
 }
-.input_text{
-    font-family: 'Quicksand', sans-serif;
-}
+
 .text_n_btn{
     display: flex;
     align-items: center;
@@ -39,6 +37,7 @@ input{
     outline: none;
     background: transparent;
     padding: 10px;
+    
 }
 .add_btn{
     border: none;
@@ -48,6 +47,7 @@ input{
     color: brown;
     font-family: 'Quicksand', sans-serif;
     border-radius: 40px;
+    cursor: pointer;
 }
 ul {
     margin: 0;
@@ -61,27 +61,29 @@ ul {
     font-size: 18px;
     transition: 0.2s;
     background:snow;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+   
   }  
-ul li.checked {
+
+/* 此段在建立完成清單時，當使用者按下已經完成之項目時，背景、顏色會改變，便產生一條劃過清單項目的線，以區別該項目已經完成*/
+ul li.checked { 
     background: linear-gradient(135deg,#E6CAFF,	#C4E1FF);
     color: #DCB5FF;
     text-decoration: line-through;
   } 
-ul li.checked::before {
-    content: '';
+
+/* 此段在建立勾勾圖示，並且使它被插入在li元素之前*/  
+ul li.checked::before { 
+    content: ''; /*放虛擬內容，在此段程式碼中就是要放勾勾 */
     position: absolute;
     border-color: #DCB5FF;
     border-style: solid;
-    border-width: 0 2px 2px 0;
+    border-width: 0 2px 2px 0; /* 在右和下產生邊框*/  
+    height: 15px; /* 讓右邊框設為15px*/  
+    width: 7px; /* 讓下邊框設為7px*/  
     top: 15px;
     left: 16px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
+    transform: rotate(45deg); /* 順時針旋轉45度後即會變成一個勾勾px*/  
+  
 }   
 .close {
     position: absolute;
@@ -92,8 +94,3 @@ ul li.checked::before {
 .content{
     padding-right: 25px;
 }  
-.header:after {
-    content: "";
-    display: table;
-    clear: both;
-}

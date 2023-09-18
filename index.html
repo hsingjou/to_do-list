@@ -23,77 +23,20 @@
             <div class="header">
                 <h3>To-Do List</h3>
                 <div class="text_n_btn">
-                    <input type="text" class="input_text" placeholder="add your thing" id="input_text">
-                    <span class="add_btn" onclick="newThing()">add</span>
+                    <input type="text"  placeholder="新增記事" id="input_text">
+                    <span class="add_btn" onclick="newThing()">新增</span>
                 </div>
             </div>
             <div class="content">
                 <ul id="mylist">
                     <li>繳停車費$20（9/15前）</li>
                     <li>去7-11領包裹$300</li>
-                    <li>面試（10:00am）</li>
-                    <li>假日記得吸地板！</li>
+                    <li>記得去換機油</li>
                   </ul>
-                  
-                  
             </div>
         </div>
     </div>
-    <script>
-        var mylist = document.getElementsByTagName("LI");
-        var i;
-        for (i = 0; i < mylist.length; i++) {
-        var span = document.createElement("SPAN");
-        var txt = document.createTextNode("\u00D7");
-        span.className = "close";
-        span.appendChild(txt);
-        mylist[i].appendChild(span);
-        }
-        
-        var close = document.getElementsByClassName("close");
-        var i;
-        for (i = 0; i < close.length; i++) {
-        close[i].onclick = function() {
-            var div = this.parentElement;
-            div.style.display = "none";
-        }
-        }
-    function newThing() {
-        var li = document.createElement("li");
-        var inputValue = document.getElementById("input_text").value;
-        var t = document.createTextNode(inputValue);
-        li.appendChild(t);
-        if (inputValue === '') {
-            alert("請輸入文字後再按add .ᐟ.ᐟ ");
-        } else {
-            document.getElementById("mylist").appendChild(li);
-        }
-        document.getElementById("input_text").value = "";
-
-        var span = document.createElement("SPAN");
-        var txt = document.createTextNode("\u00D7");
-        span.className = "close";
-        span.appendChild(txt);
-        li.appendChild(span);
-
-        for (i = 0; i < close.length; i++) {
-            close[i].onclick = function() {
-            var div = this.parentElement;
-            div.style.display = "none";
-            }
-        }
-    }
-    var list = document.querySelector('ul');
-    list.addEventListener('click', function(ev) {
-    if (ev.target.tagName === 'LI') {
-        ev.target.classList.toggle('checked');
-    }
-    }, false);
-
-    
-
-    
-    </script>
+<script src="index.js"></script>
 </body>
 </html>
 
